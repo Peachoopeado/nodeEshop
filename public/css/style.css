@@ -1,0 +1,30 @@
+.grid-container{
+    display: grid;
+    border: 1px solid #000;
+}
+.grid-container.header.container{
+    display: grid;
+    grid-gap: 5px;
+    border: 1px solid blue;
+    grid-template-areas: 
+    "logo search search icons"
+    "logo links links links";
+}
+.item{
+    background-color: #1E96FF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+.logo{
+    grid-area: logo;
+}
+.search{
+    grid-area: search;
+}
+.icons{
+    grid-area: icons;
+}
+.links{
+    grid-area: links;
+}   
