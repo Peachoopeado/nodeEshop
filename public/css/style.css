@@ -27,28 +27,4 @@
 }
 .links{
     grid-area: links;
-}
-
-.grid-container.footer{
-    display: grid;
-    grid-gap: 5px;
-    border: 1px solid #000;
-    grid-template-areas: 
-    "logo inits"
-    "copyright copyright"
-}
-
-.inits{
-    grid-area: inits;
-}
-.copyright{
-    grid-area: copyright;
-}
-
-.grid-container.main{
-    display: grid;
-    grid-gap: 5px;
-
-}
-
-
+}   
