@@ -7,6 +7,9 @@ ESHOP.use(express.static('public'))
 ESHOP.get('/', (req, res) => {
     res.render('index')
 })
+ESHOP.get('/about', (req, res) => {
+    res.render('about')
+})
 
 ESHOP.listen(3000, ()=> {
     console.log('Завёлся: http://localhost:3000')
