@@ -7,16 +7,22 @@
     <title>Севснаб - О нас</title>
 </head>
 <body>
-    <div class="grid-container about">
-        <div class="item floor1">
-            <div class="item image">Картинка</div>
-            <div class="item text">Текст</div>
+    <div class="grid-container">
+        <%- include ('blocks/header.ejs') -%>
+        <div class="grid-container about">
+            <div class="item floor">
+                <div class="item image">Картинка</div>
+                <div class="item text">Текст</div>
+            </div>
+            <div class="item floor">
+                <div class="item text">Текст</div>
+                <div class="item image">Картинка</div>
+            </div>
+            <div class="item floor">Сертификаты</div>
         </div>
-        <div class="item floor2">
-            <div class="item text">Текст</div>
-            <div class="item image">Картинка</div>
-        </div>
-        <div class="item floor3">Сертификаты</div>
+        <%- include ('blocks/footer.ejs') -%>
     </div>
+    
+
 </body>
 </html>
