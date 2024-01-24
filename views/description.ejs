@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Товар:</title>
+</head>
+<body>
+    <div class="grid-container">
+        <%- include ('blocks/header.ejs') -%>
+            <div class="grid-container description">
+                <div class="item product-name">Название товара</div>
+                <div class="item product-properties container">
+                    <div class="product-picture">
+                        Картинка товара
+                    </div>
+                    <div class="product-properties">
+                        Свойства товара
+                    </div>
+                </div>
+                <div class="item product-description">Описание товара</div>
+                <div class="item product-actions container">
+                    <div class="product-docs">Документация</div>
+                    <div class="product-product-price">Цена</div>
+                    <div class="product-buybutton">Кнопка</div>
+                </div>
+            </div>
+        <%- include ('blocks/footer.ejs') -%>
+    </div>
+   
+</body>
+</html>

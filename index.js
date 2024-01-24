@@ -22,6 +22,35 @@ ESHOP.get('/shop', (req, res) => {
 ESHOP.get('/contacts', (req, res) => {
     res.render('contacts')
 })
+ESHOP.get('/catalogue', (req, res) => {
+    res.render('catalogue')
+})
+ESHOP.get('/cart', (req, res) => {
+    res.render('cart')
+})
+ESHOP.get('/description', (req, res) => {
+    res.render('description')
+})
+ESHOP.get('/order', (req, res) => {
+    res.render('order')
+})
+ESHOP.get('/sign-in', (req, res) => {
+    res.render('sign-in')
+})
+ESHOP.get('/sign-up', (req, res) => {
+    res.render('sign-up')
+})
+ESHOP.get('/user-page', (req, res) => {
+    res.render('user-page')
+})
+ESHOP.get('/news', (req, res) => {
+    res.render('news')
+})
+ESHOP.get('/new', (req, res) => {
+    res.render('new')
+})
+
+
 
 
 ESHOP.listen(3000, ()=> {
