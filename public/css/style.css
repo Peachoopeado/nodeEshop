@@ -1,49 +1,97 @@
 .grid-container{
     display: grid;
     
-    border: 1px solid #000;
 }
 .grid-container.header.container{
     display: grid;
-    grid-gap: 5px;
-    border: 1px solid blue;
-    grid-template-areas: 
-    "logo search search icons"
-    "logo links links links";
+    grid-template-columns: 1fr 5fr 1.5fr;
+    grid-template-rows: 3fr 2fr;
+    color: white;
+}
+
+.item.search {
+    display: flex;
+    align-items: center;
+}
+.item.search input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding-left: 20px;
+    margin: 0 50px;
+    border-radius: 15px;
+    border: 1px solid #acacac;
 }
 .item{
-    background-color: #1E96FF;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px;
-}
-.logo{
-    grid-area: logo;
-}
-.search{
-    grid-area: search;
-}
-.icons{
-    grid-area: icons;
-    display: flex;
-    justify-content: space-around;  
-}
-.links{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    grid-area: links;
     
+    text-align: center;
 }
+.item.logo{
+    grid-row: span 2;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    width: 15vw;
+}
+.item.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icons a{
+    display: flex;
+    flex-direction: column;
+}
+.icons i{
+    font-size: 25px;
+}
+.item.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    grid-column: span 2;
+    background-color:  #4f81bc;
+    margin-left: 50px;
+    font-weight: bold;
+
+}
+
    
 
 .grid-container.footer{
     display: grid;
     grid-gap: 5px;
-    grid-template: 1fr 1fr/ 1fr 1fr;
+    grid-template: 4fr 1fr/ 1fr 2fr;
+    color: white;
+    background-color: #363131;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 50px 0;
+    
+}
+.footer-logo img{
+    width: 50%;
+}
+.item.footer-inits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
 }
 .footer-copyright{
     grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #000;
 }
 
 .grid-container.main{
