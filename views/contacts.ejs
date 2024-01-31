@@ -10,10 +10,33 @@
     <div class="grid-container">
         <%- include ('blocks/header.ejs') -%>
         <div class="grid-container contacts">
-            <div class="item fields">Поля</div>
+            <div class="item fields">
+                <h1>НАПИШИТЕ НАМ!</h1>
+                <form action="">
+                    <input type="text" placeholder="*ФИО">
+                    <input type="text" placeholder="Название организации">
+                    <input type="text" placeholder="Должность">
+                    <input type="email" placeholder="*Почта">
+                    <input type="tel" placeholder="*Телефон">
+                    <input type="text" placeholder="*Тема сообщения">
+                    <input type="text" placeholder="*Сообщение">
+                </form>
+            </div>
             <div class="item inits">
-                <div class="inits map">Карта</div>
-                <div class="inits info">Информация</div>
+                <div class="inits map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8f8d44ebac29f057b438b0fbec53fb5d69d5043d76d49fbc86d25d1ae69a7012&amp;width=100%25&amp;height=583&amp;lang=ru_RU&amp;scroll=true"></script></div>
+                <div class="inits info">
+                    <h2>КОНТАКТЫ</h2>
+                    <div class="office-address">
+                        <h2>АДРЕС ОФИСА</h2>
+                        <p>Россия, Лен.область, г. Гатчина, ул. Рысева д. 62А</p>
+                        <div class="num-mail">
+                            <h2>НОМЕР ТЕЛЕФОНА</h2>
+                            <p>+7 (812) 297-15-15</p>
+                            <h2>ПОЧТА</h2>
+                            <a href="mailtp:info@sev_snab.ru">info@sev_snab.ru</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <%- include ('blocks/footer.ejs') -%>
