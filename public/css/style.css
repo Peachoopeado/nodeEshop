@@ -1,8 +1,7 @@
-.grid-container{
+.grid-container {
     display: grid;
-    
 }
-.grid-container.header.container{
+.grid-container.header.container {
     display: grid;
     grid-template-columns: 1fr 5fr 1.5fr;
     grid-template-rows: 3fr 2fr;
@@ -13,7 +12,7 @@
     display: flex;
     align-items: center;
 }
-.item.search input{
+.item.search input {
     width: 100%;
     height: 40px;
     border: none;
@@ -22,71 +21,67 @@
     border-radius: 15px;
     border: 1px solid #acacac;
 }
-.item{
+.item {
     border: 1px solid #000;
     text-align: center;
 }
-.item.logo{
+.item.logo {
     grid-row: span 2;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.logo img{
+.logo img {
     width: 15vw;
 }
-.item.icons{
+.item.icons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.icons a{
+.icons a {
     display: flex;
     flex-direction: column;
 }
-.icons i{
+.icons i {
     font-size: 25px;
 }
-.item.links{
+.item.links {
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
     flex-wrap: wrap;
     grid-column: span 2;
-    background-color:  #4f81bc;
+    background-color: #4f81bc;
     margin-left: 50px;
     font-weight: bold;
-
 }
 
-   
-
-.grid-container.footer{
+.grid-container.footer {
     display: grid;
     grid-gap: 5px;
     grid-template: 4fr 1fr/ 1fr 2fr;
     color: white;
     background-color: #363131;
 }
-.footer-logo{
+.footer-logo {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 50px 0;
-    
 }
-.footer-logo img{
+.footer-logo img {
     width: 50%;
 }
-.item.footer-inits{
+.item.footer-inits {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
 }
-.footer-copyright{
+.footer-copyright {
     grid-column: span 2;
     display: flex;
     align-items: center;
@@ -94,32 +89,31 @@
     border-top: 1px solid #000;
 }
 
-.grid-container.main{
+.grid-container.main {
     display: grid;
     grid-gap: 5px;
 }
 
-.grid-container.about{
+.grid-container.about {
     display: grid;
     width: 90%;
     grid-gap: 5px;
-    grid-template: 2fr 1fr/ 1fr ;
+    grid-template: 2fr 1fr/ 1fr;
     border: 1px solid red;
     margin: 0 auto;
-    
 }
-.telling h1{
+.telling h1 {
     text-align: left;
 }
-.telling img{
+.telling img {
     width: 30vw;
 }
-.telling p{
+.telling p {
     text-align: justify;
     margin: 0 30px;
     font-size: 2.5vh;
 }
-.floor1{
+.floor1 {
     display: flex;
     /* grid-template: 1fr/ 1fr 1fr; */
     justify-content: space-between;
@@ -127,79 +121,173 @@
     border: 1px solid #000;
 }
 
-.floor2{
+.floor2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.floor2 img{
+.floor2 img {
     width: 25vw;
 }
-.certificates{
+.certificates {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.certs{
+.certs {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.certs img{
+.certs img {
     width: 20vw;
 }
-.par{
+.par {
     margin: 0 30px;
     text-align: justify;
     font-size: 2vw;
 }
 
+.grid-container.partners {
+    display: grid;
+    grid-gap: 25px;
+    width: 75%;
+    margin: 0 auto;
+}
 
-.grid-container.partners{
+.text-block {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.partner-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 25px;
+    border: 1px solid #000;
+}
+.partner-card h1{
+    margin-left: 33px;
+}
+.partner-card p{
+    margin: 0 35px;
+}
+.partner-card img {
+    position: absolute;
+    width: 25%;
+    top: 20px;
+
+    right: 30px;
+}
+.submit {
+    width: 15%;
+    background: #384685;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.grid-cotainer.assortment {
     display: grid;
     grid-gap: 5px;
 }
-
-.grid-cotainer.assortment{
-    display: grid;
-    grid-gap: 5px;
-}
-.item.categories{
+.item.categories {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.grid-container.contacts{
+.grid-container.contacts {
     display: grid;
-    grid-gap: 5px;
     grid-template: 1fr/1fr 1fr;
+    margin-bottom: 30px;
 }
-.inits{
+.fields form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fields form input {
+    width: 45%;
+    height: 20px;
+    margin: 10px 0;
+    padding: 15px 0 15px 35px;
+    border: 2px solid #000000;
+    border-radius: 40px;
+}
+.fields form textarea {
+    margin: 15px 0;
+    resize: none;
+    border: 2px solid #000;
+    border-radius: 35px;
+    padding: 15px 25px 15px 25px;
+    font-family: serif;
+}
+.fields form button {
+    width: 55%;
+    background: #384685;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.inits {
     display: grid;
-    grid-gap: 5px;
-    grid-template: 1fr 1fr/ 1fr;
-    border: 1px solid #000;
+    grid-template: 1fr/ 1fr;
+    background-color: #363131;
+}
+.inits.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    color: white;
+}
+.office-address p {
+    font-size: 20px;
+}
+.num p {
+    font-size: 25px;
+}
+.mail a {
+    font-size: 25px;
 }
 
-.grid-container.catalogue{
+.grid-container.catalogue {
     display: grid;
     grid-gap: 5px;
     grid-template: 1fr/ 1fr 4fr;
 }
 
-.grid-container.cart{
+.grid-container.cart {
     display: grid;
     grid-gap: 5px;
     grid-template: 1fr/ 2fr 1fr;
 }
 
-.grid-container.description{
+.grid-container.description {
     display: grid;
     grid-gap: 5px;
 }
 
-.grid-container.order-form{
+.grid-container.order-form {
     display: grid;
     grid-gap: 5px;
     grid-template: 1fr/ 1fr 1fr;
