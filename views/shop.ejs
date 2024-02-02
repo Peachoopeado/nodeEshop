@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Северснаб - Категории товаров</title>
 </head>
+
 <body>
     <div class="grid-container">
         <%- include ('blocks/header.ejs') -%>
             <div class="grid-container assortment">
+                <h1>Добро пожаловать! Выберите интересующую вас категорию товаров:</h1>
                 <div class="item categories">
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
-                    <a href="#">Category</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/cars.png" alt="Легковые">Легковые
+                        автомобили</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/commercial.png"
+                            alt="Коммерческий">Коммерческий транспорт</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/dom.png"
+                            alt="Сельхоз">Сельхоз.техника</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/manuf.png"
+                            alt="Промышленная">Промышленная техника</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/marine.png" alt="Судовые">Судовые</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/2t-4t.png" alt="2T-4T">2T-4T</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/train.png" alt="ЖД">Железнодорожная
+                        техника</a>
+                    <a class="category-link" href="catalogue"><img src="/images/categories/other.png" alt="Различная">Различная
+                        техника</a>
+
                 </div>
-                <div class="item help">Need help</div>
+                <div class="item help">
+                    <div class="help-container">
+
+                        <p>Есть вопросы? Наши специалисты ответят!</p>
+                        <a href="contacts">Написать письмо</a>
+
+
+                    </div>
+
+                </div>
             </div>
-        <%- include ('blocks/footer.ejs') -%>
+            <%- include ('blocks/footer.ejs') -%>
     </div>
 </body>
+
 </html>
